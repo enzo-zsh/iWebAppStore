@@ -1,9 +1,236 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Refresh" content="0; url=https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" />
-  </head>
-  <body>
-    <p>Redirect to the <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa">iWebAppStore</a>.</p>
-  </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iWebAppStore Installer</title>
+    <style>
+        /* [Styles précédents restent identiques jusqu'à .version-icon] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background: #f5f5f7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .app-container {
+            max-width: 400px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 22px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+
+        .app-subtitle {
+            font-size: 16px;
+            color: #86868b;
+            margin-bottom: 30px;
+        }
+
+        .download-options {
+            display: grid;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .download-option {
+            background: white;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            color: #1d1d1f;
+            transition: all 0.3s ease;
+            cursor: default;
+        }
+
+        .version-info {
+            font-size: 14px;
+            color: #86868b;
+            text-align: left;
+        }
+
+        .version-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: white;
+        }
+
+        .version-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .version-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .version-text {
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .get-button {
+            background: #007AFF;
+            color: white;
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            min-width: 64px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .get-button:hover {
+            background: #0066CC;
+            transform: scale(0.98);
+        }
+
+        .get-button:active {
+            transform: scale(0.95);
+            background: #005AB5;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-icon">
+            <img src="assets/logo.png" alt="iWebAppStore Icon">
+        </div>
+        <h1 class="app-title">iWebAppStore</h1>
+        <p class="app-subtitle">WebClip installer - Choose your icon</p>
+        
+        <div class="download-options">
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/iWebAppStore.png" alt="Stable Version">
+                    </div>
+                    <div>
+                        <div class="version-text">App Store Style</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+            
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/legacy.png" alt="Beta Version">
+                    </div>
+                    <div>
+                        <div class="version-text">iWAS Legacy Style</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/dev-iwas.png" alt="Dev-icon">
+                    </div>
+                    <div>
+                        <div class="version-text">iWAS Dev icon</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+            
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/iwebappstore-ios6.png" alt="green-ios6">
+                    </div>
+                    <div>
+                        <div class="version-text">iWAS iOS 6 Green</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/v1iwebappstore.jpeg" alt="iwas-v1">
+                    </div>
+                    <div>
+                        <div class="version-text">iWebAppStore v1</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+            
+            <div class="download-option">
+                <div class="version-content">
+                    <div class="version-icon">
+                        <img src="assets/v2iwebappstore.jpeg" alt="Lite Version">
+                    </div>
+                    <div>
+                        <div class="version-text">iWebAppStore v2</div>
+                        <div class="version-info">icon by @enzo_zsh</div>
+                    </div>
+                </div>
+                <a href="https://previewer.adalo.com/41bd283d-4a94-4b26-99f4-fade0b6f7102/?source=pwa" class="get-button">GET</a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
